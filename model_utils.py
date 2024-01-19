@@ -38,7 +38,7 @@ def load_training_arguments():
 def load_trainer(model, training_dataset, peft_config, tokenizer, training_arguments):
     trainer = SFTTrainer(
         model = model,
-        training_dataset = training_dataset,
+        train_dataset = training_dataset,
         peft_config = peft_config,
         dataset_text_field = config.DATASET_TEXT_FIELD,
         max_seq_length = config.MAX_SEQ_LENGTH,
