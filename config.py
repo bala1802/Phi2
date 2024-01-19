@@ -15,3 +15,11 @@ Quantization Configuration
 '''
 ENABLE_4BIT = True
 QUANTIZATION_TYPE = "nf4"
+
+'''
+Adapter Configuration
+'''
+LORA_ALPHA = 16
+LORA_DROPOUT = 0.1
+LORA_RANK = 64
+TASK_TYPE = "CAUSAL_LM"
