@@ -2,6 +2,7 @@
 Data Configuration
 '''
 DATASET = "OpenAssistant/oasst1"
+DATASET_TEXT_FIELD = "prompt_response"
 
 '''
 Model Configuration
