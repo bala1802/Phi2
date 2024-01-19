@@ -33,3 +33,4 @@ def load_training_arguments():
         warmup_ratio=config.WARMUP_RATIO,
         gradient_checkpointing=config.ENABLE_GRADIENT_CHECKPOINTING
     )
+    return training_arguments
