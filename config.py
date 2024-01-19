@@ -46,3 +46,8 @@ ENABLE_GRADIENT_CHECKPOINTING=False
 Model Trainer Configuration
 '''
 MAX_SEQ_LENGTH = 512
+
+'''
+Inference Configuration
+'''
+TASK = "text_generation"
