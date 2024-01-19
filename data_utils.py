@@ -20,7 +20,7 @@ def prepare_prompts_responses(dataset):
         prompt_text = user_prompters.loc[record.parent_id,'text']
         prompt_response = "### Human: " + prompt_text + " ### Assistant: " + record['text']
         prompts_responses.append(prompt_response)
-    assistants['prompt_response'] = prompts_responses
+    assistants[config.DATASET_TEXT_FIELD] = prompts_responses
     
     return assistants
 
