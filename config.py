@@ -41,3 +41,8 @@ WARMUP_RATIO = 0.05
 LR_SCHEDULER_TYPE = "constant"
 ENABLE_FP_16 = True
 ENABLE_GRADIENT_CHECKPOINTING=False
+
+'''
+Model Trainer Configuration
+'''
+MAX_SEQ_LENGTH = 512

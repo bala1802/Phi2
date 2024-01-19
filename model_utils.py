@@ -1,12 +1,12 @@
+from trl import SFTTrainer
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments
 
 import config
-import quantization_utils
 
-def load_model():
+def load_model(quantization_config):
     model = AutoModelForCausalLM.from_pretrained(
         config.MODEL_NAME,
-        quantization_config = quantization_utils.load_bits_and_bytes_config(),
+        quantization_config = quantization_config,
         trust_remote_code = config.TRUST_REMOTE_CODE
     )
     model.config.use_cache = config.ENABLE_MODEL_CONFIG_CACHE
@@ -34,3 +34,15 @@ def load_training_arguments():
         gradient_checkpointing=config.ENABLE_GRADIENT_CHECKPOINTING
     )
     return training_arguments
+
+def load_trainer(model, training_dataset, peft_config, tokenizer, training_arguments):
+    trainer = SFTTrainer(
+        model = model,
+        training_dataset = training_dataset,
+        peft_config = peft_config,
+        dataset_text_field = config.DATASET_TEXT_FIELD,
+        max_seq_length = config.MAX_SEQ_LENGTH,
+        tokenizer = tokenizer,
+        args = training_arguments
+    )
+    return trainer
