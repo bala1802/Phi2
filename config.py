@@ -28,7 +28,7 @@ TASK_TYPE = "CAUSAL_LM"
 '''
 Model Training Configuration
 '''
-MODEL_OUTPUT_DIR = "TODO"
+MODEL_OUTPUT_DIR = "results/"
 PER_DEVICE_TRAIN_BATCH_SIZE = 4
 GRADIENT_ACCUMULATION_STEPS = 4
 OPTIM = "paged_adamw_32bit"
