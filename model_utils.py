@@ -9,7 +9,7 @@ def load_model(quantization_config):
         quantization_config = quantization_config,
         trust_remote_code = config.TRUST_REMOTE_CODE
     )
-    # model.config.use_cache = config.ENABLE_MODEL_CONFIG_CACHE
+    model.config.use_cache = config.ENABLE_MODEL_CONFIG_CACHE
     return model
 
 def load_tokenizers():
