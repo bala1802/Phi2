@@ -7,7 +7,7 @@ def load_adapter(target_modules):
         lora_alpha=config.LORA_ALPHA,
         lora_dropout=config.LORA_DROPOUT,
         r = config.LORA_RANK,
-        bias=None,
+        bias="none",
         task_type=config.TASK_TYPE,
         target_modules=target_modules
     )
