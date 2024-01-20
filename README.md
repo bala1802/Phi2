@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository is dedicated to the fine-tuning of a Microsoft's Phi-2 large language model, aiming to enhance its capabilities and adapt it to specific tasks or domains.
+This repository is dedicated to the fine-tuning of a Microsoft's Phi-2 small language model, aiming to enhance its capabilities and adapt it to specific tasks or domains.
 
 ## About Phi-2
 
@@ -42,7 +42,6 @@ Source: [Microsoft/Phi-2](https://huggingface.co/microsoft/phi-2#model-summary)
 ├── requirements.txt
 ```
 
-
 ## Dataset
 
 The dataset known as [OpenAssistant/oasst1](https://huggingface.co/datasets/OpenAssistant/oasst1#openassistant-conversations-dataset-oasst1) serves as the fine-tuning source for the model. It includes a collection of human-generated, human-annotated assistant-style conversations, totaling 161,443 messages across 35 diverse languages. This corpus is enriched with 461,292 quality ratings, leading to the creation of over 10,000 fully annotated conversation trees.
@@ -53,10 +52,16 @@ The dataset known as [OpenAssistant/oasst1](https://huggingface.co/datasets/Open
 
 Refer [data_utils.py](https://github.com/bala1802/Phi2/blob/main/data_utils.py) for converting the training dataset into the specific format for fine-tuning.
 
-Instruction Template: `### Human: <YOUR QUERY> ### Assistant: <YOUR ANSWER>`
+Instruction Template: 
+`### Human: <YOUR QUERY> ### Assistant: <YOUR ANSWER>`
 
-Example: `### Human: What is the impact of cryptocurrency in the world? ### Assistant: Cryptocurrency has had a profound impact by revolutionizing traditional financial systems and fostering decentralization in global transactions.`
+Example: 
+`### Human: What is the impact of cryptocurrency in the world? ### Assistant: Cryptocurrency has had a profound impact by revolutionizing traditional financial systems and fostering decentralization in global transactions.`
 
 
-## 
+## Steps involved in Finetuning the model
+
+
+
+
 
