@@ -107,6 +107,7 @@ The layer names can be identified by printing the Architecture of the model
 
 ## Sample Inferencing
 
+<img width="1248" alt="image" src="https://github.com/bala1802/Phi2/assets/22103095/e86fdafe-fa5e-4774-ba64-5ada01feb9a4">
 
 
 
