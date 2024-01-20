@@ -1,3 +1,4 @@
+torch
 trl
 transformers
 accelerate
