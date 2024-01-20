@@ -1,4 +1,5 @@
-# Under Construction...
+![under_construction_pc_800_wht](https://github.com/bala1802/Phi2/assets/22103095/c086d691-9995-4a28-839b-8e8c0648decc)
+
 
 # Finetuning Microsoft/Phi-2
 
