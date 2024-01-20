@@ -95,6 +95,16 @@ The layer names can be identified by printing the Architecture of the model
 
 ## Inferencing 
 
+![Phi2-Inferencing drawio](https://github.com/bala1802/Phi2/assets/22103095/49a511c7-7390-42cc-8307-51207823a516)
+
+🔍 Extract the `Adapter` from the Fine-tuned 4-Bit Quantized model. This `Adapter` encapsulates the refined parameters tailored to the domain-sepcific data.
+
+🧩 Integrate the `Adapter` with the original Pre-Trained 32-Bit model. This fusion enables the Language Model with the domain knowledge acquired during the fine-tuning process.
+
+💬 User provides the prompt to the Langauage Model for interaction
+
+🚀 The Language Model generates the response for the provided Prompt.
+
 
 
 
