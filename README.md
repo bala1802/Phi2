@@ -64,6 +64,16 @@ Example:
 
 ## Steps involved in Finetuning the model
 
+![Phi2_Finetuning01 drawio](https://github.com/bala1802/Phi2/assets/22103095/d236ff7d-f621-4bbb-942b-d11f742bfd9c)
+
+🔍 Quantize the 32-bit Language Model to 4-bit model. This technique reduces the memory and computation requirements of the Neural Network layer by representing the weights and activations in only 4 bits.
+
+🧠 Identify the Layers that require weight updates and freeze the rest during fine-tuning. Managing the layers this way will allow the crucial layers to adapt to the new domain-specific data, while preserving the rest of the parameters of the pre-trained model.
+
+💡 LoRA, an adapter module, which will hold its own smaller set of parameters, which are learnt during the fine-tuning, enhancing the model's flexibility and adaptability to the domain specific nuances.
+
+📚 A dataset tailored specifically to the domain is constructed as Instructions and used as a training dataset for the fine-tuning process.
+
 
 
 
