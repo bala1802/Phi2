@@ -61,6 +61,10 @@ Instruction Template:
 Example: 
 `### Human: What is the impact of cryptocurrency in the world? ### Assistant: Cryptocurrency has had a profound impact by revolutionizing traditional financial systems and fostering decentralization in global transactions.`
 
+## Over-all Architecture of the Fine-tune process
+
+
+
 
 ## Model Fine-tuning
 
