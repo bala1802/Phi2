@@ -69,7 +69,7 @@ Source: [Parameter-Efficient Transfer Learning for NLP](http://proceedings.mlr.p
 
 ### Transformer
 
-- The `Adapter` module is incorporated twice in the Transformers. Firstly, after the `projection` layer, which is followed by the Multi Headed attention.
+- The `Adapter` module is incorporated twice in the `Transformers`. Firstly, after the `projection` layer, which is followed by the Multi Headed attention.
 - Secondly, after the 2 `FeedForward` Layers
 
 ### Adapter
