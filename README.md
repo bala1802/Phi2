@@ -72,6 +72,9 @@ Source: [Parameter-Efficient Transfer Learning for NLP](http://proceedings.mlr.p
 - The `Adapter` module is incorporated twice in the Transformers. Firstly, after the `projection` layer, which is followed by the Multi Headed attention.
 - Secondly, after the 2 `FeedForward` Layers
 
+### Adapter
+
+- `Adapter` _contains few parameters relative to the attention and feedforward layers relative to the original pre-trained model_. The green layers, which you see are the one trained on the domain specific dataset.
 
 
 ## Model Fine-tuning
