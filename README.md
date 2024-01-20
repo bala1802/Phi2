@@ -62,17 +62,23 @@ Example:
 `### Human: What is the impact of cryptocurrency in the world? ### Assistant: Cryptocurrency has had a profound impact by revolutionizing traditional financial systems and fostering decentralization in global transactions.`
 
 
-## Steps involved in Finetuning the model
+## Model Fine-tuning
 
 ![Phi2_Finetuning01 drawio](https://github.com/bala1802/Phi2/assets/22103095/d236ff7d-f621-4bbb-942b-d11f742bfd9c)
 
-🔍 Quantize the 32-bit Language Model to 4-bit model. This technique reduces the memory and computation requirements of the Neural Network layer by representing the weights and activations in only 4 bits.
+🔍 Quantize the 32-bit Language Model to 4-bit model. This technique reduces the memory and computation requirements of the Neural Network layer by representing the weights and activations in only 4 bits. Refer [quantization_utils.py](https://github.com/bala1802/Phi2/blob/main/quantization_utils.py)
 
 🧠 Identify the Layers that require weight updates and freeze the rest during fine-tuning. Managing the layers this way will allow the crucial layers to adapt to the new domain-specific data, while preserving the rest of the parameters of the pre-trained model.
 
-💡 LoRA, an adapter module, which will hold its own smaller set of parameters, which are learnt during the fine-tuning, enhancing the model's flexibility and adaptability to the domain specific nuances.
+The layer names can be identified by printing the Architecture of the model
 
-📚 A dataset tailored specifically to the domain is constructed as Instructions and used as a training dataset for the fine-tuning process.
+<img width="970" alt="image" src="https://github.com/bala1802/Phi2/assets/22103095/741e61fe-57a3-4fc6-addc-b0cd7c87c4bc">
+
+💡 LoRA, an adapter module, which will hold its own smaller set of parameters, which are learnt during the fine-tuning, enhancing the model's flexibility and adaptability to the domain specific nuances. Refer [adapter_utils.py](https://github.com/bala1802/Phi2/blob/main/adapter_utils.py)
+
+📚 A dataset tailored specifically to the domain is constructed as Instructions and used as a training dataset for the fine-tuning process. Refer [data_utils.py](https://github.com/bala1802/Phi2/blob/main/data_utils.py)
+
+## Inferencing 
 
 
 
