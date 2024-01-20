@@ -1,4 +1,4 @@
-# Finetuning Microsoft/Phi-2
+# Finetuning Microsoft Phi-2
 
 ## Introduction
 
