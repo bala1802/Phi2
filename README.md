@@ -105,6 +105,10 @@ The layer names can be identified by printing the Architecture of the model
 
 🚀 The Language Model generates the response for the provided Prompt.
 
+## Sample Inferencing
+
+
+
 
 
 
