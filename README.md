@@ -61,8 +61,16 @@ Instruction Template:
 Example: 
 `### Human: What is the impact of cryptocurrency in the world? ### Assistant: Cryptocurrency has had a profound impact by revolutionizing traditional financial systems and fostering decentralization in global transactions.`
 
-## Over-all Architecture of the Fine-tune process
+## Architecture of the adapter module and its integration with the Transformer
 
+<img width="551" alt="image" src="https://github.com/bala1802/Phi2/assets/22103095/3b21c0a7-23f5-4f9a-81b6-a60285b15449">
+
+Source: [Parameter-Efficient Transfer Learning for NLP](http://proceedings.mlr.press/v97/houlsby19a.html) 
+
+### Transformer
+
+- The `Adapter` module is incorporated twice in the Transformers. Firstly, after the `projection` layer, which is followed by the Multi Headed attention.
+- Secondly, after the 2 `FeedForward` Layers
 
 
 
